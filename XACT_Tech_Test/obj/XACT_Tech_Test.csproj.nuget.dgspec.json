@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/patrykstachowiak/Desktop/xact/XACT_Tech_Test/XACT_Tech_Test/XACT_Tech_Test.csproj": {}
+    "/Users/patrykstachowiak/Desktop/JOB/xact/XACT_Tech_Test/XACT_Tech_Test/XACT_Tech_Test.csproj": {}
   },
   "projects": {
-    "/Users/patrykstachowiak/Desktop/xact/XACT_Tech_Test/XACT_Tech_Test/XACT_Tech_Test.csproj": {
+    "/Users/patrykstachowiak/Desktop/JOB/xact/XACT_Tech_Test/XACT_Tech_Test/XACT_Tech_Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/patrykstachowiak/Desktop/xact/XACT_Tech_Test/XACT_Tech_Test/XACT_Tech_Test.csproj",
+        "projectUniqueName": "/Users/patrykstachowiak/Desktop/JOB/xact/XACT_Tech_Test/XACT_Tech_Test/XACT_Tech_Test.csproj",
         "projectName": "XACT_Tech_Test",
-        "projectPath": "/Users/patrykstachowiak/Desktop/xact/XACT_Tech_Test/XACT_Tech_Test/XACT_Tech_Test.csproj",
+        "projectPath": "/Users/patrykstachowiak/Desktop/JOB/xact/XACT_Tech_Test/XACT_Tech_Test/XACT_Tech_Test.csproj",
         "packagesPath": "/Users/patrykstachowiak/.nuget/packages/",
-        "outputPath": "/Users/patrykstachowiak/Desktop/xact/XACT_Tech_Test/XACT_Tech_Test/obj/",
+        "outputPath": "/Users/patrykstachowiak/Desktop/JOB/xact/XACT_Tech_Test/XACT_Tech_Test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/patrykstachowiak/.nuget/NuGet/NuGet.Config"

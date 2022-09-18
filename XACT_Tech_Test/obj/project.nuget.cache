@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z3TIYdZU7Qmlz98d2MRKFljQxxnUY0x0TuCAWfhztmsVQmasOqcaaR4IN4n9ssCnX0mm4GTJw/gnDGc0Wf5BGA==",
+  "dgSpecHash": "UwPwZ02fXeuIJGke1U872u62u9oy2UHmBeloc5ED5mKG/juKe3YUhWUSHFu+JpAzsUVq0VmQq2G7xQF7jSNg+Q==",
   "success": true,
-  "projectFilePath": "/Users/patrykstachowiak/Desktop/xact/XACT_Tech_Test/XACT_Tech_Test/XACT_Tech_Test.csproj",
+  "projectFilePath": "/Users/patrykstachowiak/Desktop/JOB/xact/XACT_Tech_Test/XACT_Tech_Test/XACT_Tech_Test.csproj",
   "expectedPackageFiles": [
     "/Users/patrykstachowiak/.nuget/packages/microsoft.codecoverage/17.3.1/microsoft.codecoverage.17.3.1.nupkg.sha512",
     "/Users/patrykstachowiak/.nuget/packages/microsoft.csharp/4.0.1/microsoft.csharp.4.0.1.nupkg.sha512",

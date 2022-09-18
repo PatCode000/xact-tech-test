@@ -1,10 +1,13 @@
 ﻿using System;
 //using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Xunit;
+using static System.Net.Mime.MediaTypeNames;
 
 
 namespace XACT_Tech_Test
 {
+
+
     public class Program
     {
         /*
@@ -14,36 +17,20 @@ namespace XACT_Tech_Test
 
         }        
         */
-
-        [Fact]
-        private void LoadTextFile()
-        {
-            TextLoader textLoader = new TextLoader();
-            Console.WriteLine("TEXT FILE LOADED");
-            textLoader.LoadFile();
-            textLoader.PrintData();
-        }
+        List<Panel> data;
 
         [Fact]
         private void PrintPanelTable()
         {
+            data = new List<Panel>();
             TextLoader textLoader = new TextLoader();
-            Console.WriteLine("TEXT FILE LOADED");
-            textLoader.LoadFile();
-            textLoader.PrintPanelTable();
+            data = textLoader.LoadData();
+            DataPreparer dataPreparer = new DataPreparer();
+            //dataPreparer.PreparePanelTable(data);
+            //dataPreparer.PrepareLayerTable(data);
+            dataPreparer.PrepareCornerTable(data);
         }
 
 
-        [Fact]
-        private void TestDistance()
-        {
-            decimal result;
-            decimal result2;
-            //result = MathCalculations.GetDistance(5,5,0,0);
-            result2 = MathCalculations.GetDistanceShort(5,5,0,0);
-
-            //Console.WriteLine(result);
-            Console.WriteLine(result2);
-        }
     }
 }

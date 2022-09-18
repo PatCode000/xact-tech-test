@@ -7,7 +7,39 @@ namespace XACT_Tech_Test
         // Less precise
         public static decimal GetDistanceShort(decimal x1, decimal y1, decimal x2, decimal y2)
         {
-            return (decimal)Math.Sqrt(Math.Pow(((double)x2 - (double)x1), 2) + Math.Pow(((double)y2 - (double)y1), 2));
+            decimal result = (decimal)Math.Sqrt(Math.Pow(((double)x2 - (double)x1), 2) + Math.Pow(((double)y2 - (double)y1), 2));
+            //Console.WriteLine("DISTANCE RESULT: " + result);
+            return result;
+        }
+
+        // More precise
+        public static decimal GetDistance(decimal x1, decimal y1, decimal x2, decimal y2)
+        {
+            decimal result = 0.0m;
+
+            decimal deltaX = x2 - x1;
+            decimal deltaXPow = deltaX * deltaX;
+
+            decimal deltaY = y1 - y2;
+            decimal deltaYPow = deltaY * deltaY;
+
+            decimal powResult = deltaXPow + deltaYPow;
+
+            result = DecimalSqrt(powResult);
+
+            return result;
+        }
+
+        private static decimal DecimalSqrt(decimal _value)
+        {
+            decimal root = _value / 3;
+            int i;
+            for (i = 0; i < 32; i++)
+            {
+                root = (root + _value / root) / 2;
+            }
+
+            return root;
         }
 
         public static decimal GetMinimum(List<decimal> _values)
@@ -84,44 +116,13 @@ namespace XACT_Tech_Test
             return input;
         }
 
-        /*
-        public decimal CalculateDevotion(decimal _minimal, decimal _nominal)
+        public static decimal CalculateDevotion(decimal _minimal, decimal _nominal)
         {
             decimal result = 0.0m;
             result = _nominal - _minimal;
             return result;
         }
 
-        // More precise
-        public decimal GetDistance(decimal x1, decimal y1, decimal x2, decimal y2)
-        {
-            decimal result = 0.0m;
-
-            decimal deltaX = x2 - x1;
-            decimal deltaXPow = deltaX * deltaX;
-
-            decimal deltaY = y1 - y2;
-            decimal deltaYPow = deltaY * deltaY;
-
-            decimal powResult = deltaXPow + deltaYPow;
-
-            result = DecimalSqrt(powResult);
-
-            return result;
-        }
-
-        private decimal DecimalSqrt(decimal _value)
-        {
-            decimal root = _value / 3;
-            int i;
-            for (i = 0; i < 32; i++)
-            {
-                root = (root + _value / root) / 2;
-            }
-
-            return root;
-        }
-        */
     }
 }
 

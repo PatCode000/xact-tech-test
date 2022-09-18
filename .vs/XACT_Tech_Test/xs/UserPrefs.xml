@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{85973943-301F-48CE-9590-7DFC9826CD25}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.XACT__Tech__Test PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XACT_Tech_Test/MathCalculations.cs">
+    <Files>
+      <File FileName="XACT_Tech_Test/Program.cs" Line="24" Column="10" />
+      <File FileName="XACT_Tech_Test/TextWriter.cs" Line="21" Column="1" />
+      <File FileName="XACT_Tech_Test/TextLoader.cs" Line="11" Column="28" NotebookId="1" />
+      <File FileName="XACT_Tech_Test/MathCalculations.cs" Line="44" Column="1" NotebookId="1" />
+      <File FileName="XACT_Tech_Test/DataPreparer.cs" Line="13" Column="52" NotebookId="1" />
+      <File FileName="XACT_Tech_Test/Corner.cs" Line="17" Column="39" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="XACT_Tech_Test" expanded="True">
+            <Node name="XACT_Tech_Test" expanded="True">
+              <Node name="MathCalculations.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="XACT_Tech_Test" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
