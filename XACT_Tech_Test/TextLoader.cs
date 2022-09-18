@@ -4,16 +4,26 @@ using Newtonsoft.Json.Linq;
 
 namespace XACT_Tech_Test
 {
+    /// <summary>
+    /// Class <c>TextLoader</c> is responsible for reading a text from the file.
+    /// </summary>
     public class TextLoader
     {
         StreamReader m_streamReader;
 
+        /// <summary>
+        /// Constructor <c>TextLoader</c> creates TextLoader object.
+        /// </summary>
         public TextLoader()
         {
-            Debug.WriteLine("START TEXT LOADER");
+            Debug.WriteLine("TEXT LOADER IN PROGRESS");
         }
 
-        public List<Panel> LoadData()
+        /// <summary>
+        /// Method <c>LoadData</c> loads and creates data from the text file.
+        /// </summary>
+        /// <param name="_fileName"> name of the new file to load.</param>
+        public List<Panel> LoadData(string _fileName)
         {
             List<Panel> m_panelList = new List<Panel>();
 
@@ -22,7 +32,7 @@ namespace XACT_Tech_Test
 
             try
             {
-                using (m_streamReader = new StreamReader("10001-8.txt"))
+                using (m_streamReader = new StreamReader("test-data/" + _fileName + ".txt"))
                 {
                     Panel t_panel = new Panel();
                     Corner[] t_corners = new Corner[4];
@@ -50,7 +60,7 @@ namespace XACT_Tech_Test
 
                             if (l_panelCounter == 1)
                             {
-                                continue; // skip the first line
+                                continue; // Skip the first line
                             } else
                             {
                                 m_panelList.Add(t_panel);
@@ -59,23 +69,17 @@ namespace XACT_Tech_Test
                         } else
                         {
                             string[] t_layerInfo = splitContent[0].Split("_");
-                            string t_layerNo = "";
-                            decimal t_actualX = 0.0m;
-                            decimal t_actualY = 0.0m;
-                            decimal t_nominalX = 0.0m;
-                            decimal t_nominalY = 0.0m;
-
-                            t_layerNo = t_layerInfo[1];
-                            t_actualX = decimal.Parse(splitContent[1]);
-                            t_actualY = decimal.Parse(splitContent[2]);
-                            t_nominalX = decimal.Parse(splitContent[3]);
-                            t_nominalY = decimal.Parse(splitContent[4]);
+                            string t_layerNo = t_layerInfo[1]; // Take the name of the layer
+                            decimal t_actualX = decimal.Parse(splitContent[1]);
+                            decimal t_actualY = decimal.Parse(splitContent[2]);
+                            decimal t_nominalX = decimal.Parse(splitContent[3]);
+                            decimal t_nominalY = decimal.Parse(splitContent[4]);
 
                             // Create new corner
                             Corner t_corner = new Corner(t_actualX, t_actualY, t_nominalX, t_nominalY);
                             t_corners[l_cornerCounter] = t_corner;
 
-                            if (l_cornerCounter == 3) // Create new layer
+                            if (l_cornerCounter == 3) // Create new layer, and add all corners
                             {
                                 Layer t_layer = new Layer(t_layerNo, t_corners[0], t_corners[1], t_corners[2], t_corners[3]);
                                 t_panel.m_layers.Add(t_layer);

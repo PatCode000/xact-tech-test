@@ -13,7 +13,6 @@ namespace XACT_Tech_Test
         public decimal m_actualY { get; private set; }
         public decimal m_nominalX { get; private set; }
         public decimal m_nominalY { get; private set; }
-
         public decimal m_deviationLine { get; private set; }
 
         /// <summary>
@@ -29,8 +28,7 @@ namespace XACT_Tech_Test
             m_actualY = _actualY;
             m_nominalX = _nominalX;
             m_nominalY = _nominalY;
-
-            m_deviationLine = MathCalculations.GetDistanceShort(m_actualX, m_actualY, m_nominalX, m_nominalY);
+            m_deviationLine = MathCalculations.GetDistance(m_actualX, m_actualY, m_nominalX, m_nominalY);
         }
     }
 }
