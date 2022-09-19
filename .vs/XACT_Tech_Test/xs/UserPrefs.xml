@@ -1,18 +1,21 @@
 ﻿<Properties StartupConfiguration="{85973943-301F-48CE-9590-7DFC9826CD25}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.XACT__Tech__Test PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="XACT_Tech_Test/TextLoader.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XACT_Tech_Test/Program.cs">
     <Files>
       <File FileName="XACT_Tech_Test/Program.cs" Line="12" Column="6" />
       <File FileName="XACT_Tech_Test/DataPreparer.cs" Line="1" Column="30" />
       <File FileName="XACT_Tech_Test/TextLoader.cs" Line="46" Column="205" />
       <File FileName="XACT_Tech_Test/Corner.cs" Line="1" Column="30" />
-      <File FileName="XACT_Tech_Test/README.md" Line="7" Column="341" />
+      <File FileName="XACT_Tech_Test/README.md" Line="8" Column="1" />
       <File FileName="XACT_Tech_Test/TextWriter.cs" Line="1" Column="30" NotebookId="1" />
       <File FileName="XACT_Tech_Test/Panel.cs" Line="1" Column="30" NotebookId="1" />
       <File FileName="XACT_Tech_Test/Layer.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="XACT_Tech_Test/MathCalculations.cs" Line="1" Column="30" NotebookId="1" />
       <File FileName="XACT_Tech_Test/MathCalculations.cs" Line="1" Column="30" NotebookId="1" />
     </Files>
     <Pads>
@@ -33,8 +36,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.XACT__Tech__Test PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
