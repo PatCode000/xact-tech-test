@@ -1,4 +1,6 @@
-﻿using System;
+﻿/// Author: Patryk Stachowiak
+
+using System;
 using System.Diagnostics.Metrics;
 
 namespace XACT_Tech_Test

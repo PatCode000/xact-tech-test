@@ -1,4 +1,6 @@
-﻿using System;
+﻿/// Author: Patryk Stachowiak
+
+using System;
 
 namespace XACT_Tech_Test
 {

@@ -1,8 +1,7 @@
-﻿using System;
-//using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Xunit;
-using static System.Net.Mime.MediaTypeNames;
+﻿/// Author: Patryk Stachowiak
 
+using System;
+using Xunit;
 
 namespace XACT_Tech_Test
 {
