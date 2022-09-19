@@ -11,7 +11,7 @@ namespace XACT_Tech_Test
     /// </summary>
     public class TextLoader
     {
-        StreamReader m_streamReader;
+        StreamReader? m_streamReader;
 
         /// <summary>
         /// Constructor <c>TextLoader</c> creates TextLoader object.
@@ -43,7 +43,8 @@ namespace XACT_Tech_Test
 
                     while (!l_endOfFile)
                     {
-                        string l_dataString = m_streamReader.ReadLine();
+                        // Warning below was prevented with nullable value. It wasn't necessary as the lines below prevents from code from using null, but it looks much better now when there is no error. 
+                        string? l_dataString = m_streamReader.ReadLine();
 
                         if (l_dataString == null)
                         {
