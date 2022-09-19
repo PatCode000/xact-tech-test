@@ -1,13 +1,12 @@
 ﻿<Properties StartupConfiguration="{85973943-301F-48CE-9590-7DFC9826CD25}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="XACT_Tech_Test/Program.cs">
     <Files>
-      <File FileName="XACT_Tech_Test/Program.cs" Line="88" Column="10" />
+      <File FileName="XACT_Tech_Test/Program.cs" Line="90" Column="1" />
       <File FileName="XACT_Tech_Test/DataPreparer.cs" Line="10" Column="22" />
       <File FileName="XACT_Tech_Test/TextLoader.cs" Line="82" Column="95" />
-      <File FileName="XACT_Tech_Test/MathCalculations.cs" Line="139" Column="40" />
+      <File FileName="XACT_Tech_Test/MathCalculations.cs" Line="61" Column="1" />
       <File FileName="XACT_Tech_Test/Corner.cs" Line="14" Column="56" />
-      <File FileName="XACT_Tech_Test/DataPreparer.cs" Line="10" Column="22" />
       <File FileName="XACT_Tech_Test/TextWriter.cs" Line="9" Column="1" NotebookId="1" />
       <File FileName="XACT_Tech_Test/Panel.cs" Line="19" Column="2" NotebookId="1" />
       <File FileName="XACT_Tech_Test/Layer.cs" Line="1" Column="1" NotebookId="1" />
@@ -16,7 +15,9 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="XACT_Tech_Test" expanded="True">
-            <Node name="XACT_Tech_Test" expanded="True" />
+            <Node name="XACT_Tech_Test" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -30,10 +31,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.XACT__Tech__Test PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.XACT__Tech__Test PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

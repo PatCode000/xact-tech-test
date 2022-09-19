@@ -14,7 +14,7 @@ namespace XACT_Tech_Test
         /// <param name="y1"> y position of the first point.</param>
         /// <param name="x2"> x position of the second point.</param>
         /// <param name="y2"> y position of the second point.</param>
-        public static decimal GetDistanceShort(decimal x1, decimal y1, decimal x2, decimal y2)
+        public static decimal GetDistanceDouble(decimal x1, decimal y1, decimal x2, decimal y2)
         {
             decimal result = (decimal)Math.Sqrt(Math.Pow(((double)x2 - (double)x1), 2) + Math.Pow(((double)y2 - (double)y1), 2));
             //Console.WriteLine("DISTANCE RESULT: " + result);
@@ -52,6 +52,8 @@ namespace XACT_Tech_Test
         /// <param name="_value"> decimal number.</param>
         private static decimal DecimalSqrt(decimal _value)
         {
+            if (_value <= 0) return 0.0m;
+
             decimal root = _value / 3;
             int i;
             for (i = 0; i < 32; i++)
